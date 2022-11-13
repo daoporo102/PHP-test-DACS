@@ -13,8 +13,8 @@ if (isset($_POST['login_btn'])) {
 
     if (mysqli_num_rows($login_query_run) > 0) {
        
-        setcookie("username", $username, time() + 1209600);
-        setcookie("password", $password, time() + 1209600);
+        setcookie("username", $username, time() + 3600);
+        setcookie("password", $password, time() + 3600);
 
             redirect("../admin/index.php","Welcome to Dashboard");
     } else {
